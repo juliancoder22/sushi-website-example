@@ -1,0 +1,54 @@
+.popular-dish {
+  background-color: #fff5f1;
+  width: 400px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+  min-height: 400px;
+  position: relative;
+  box-shadow: 0 4px 24px 5px rgba(243, 170, 123, 0.2);
+
+  &__dish-img {
+    position: absolute;
+    top: -10rem;
+  }
+
+  &__title {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 16px;
+  }
+
+  &__price {
+    font-family: "Koh Santepheap", serif;
+    color: #ff9800;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  &__buy {
+    background-color: #ff9800;
+    padding: 0.5rem 0.6rem;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+}
+.popular-dish:first-child {
+  .popular-dish__dish-img {
+    top: -7.5rem;
+  }
+}

@@ -1,0 +1,41 @@
+.popular {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  &__section-name {
+    font-family: "Khula", sans-serif;
+    font-size: 40px;
+    color: #ff8f1e;
+    padding-top: 2rem;
+  }
+
+  &__title {
+    font-family: "Koh Santepheap", serif;
+    color: #2a2521;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    margin-top: 210px;
+    gap: 55px;
+  }
+
+  &__background-img-1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  &__background-img-2 {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+  }
+}
