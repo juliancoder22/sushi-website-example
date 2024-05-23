@@ -1,0 +1,57 @@
+.recently-added {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 15rem;
+  gap: 10rem;
+  position: relative;
+
+  &__content {
+    width: 40%;
+  }
+
+  &__section-name {
+    color: #ff8f1e;
+    font-size: 40px;
+    font-family: "Khula", sans-serif;
+  }
+
+  &__title {
+    font-family: "Koh Santepheap", serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 25px;
+  }
+
+  &__text {
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+  }
+
+  &__button {
+    width: 200px;
+    height: 62px;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    background-color: #ff8f1e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 40px;
+  }
+
+  &__background-img-1 {
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+}
