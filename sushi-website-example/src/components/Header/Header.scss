@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 15%;
+  font-family: "Lato", sans-serif;
+  padding-top: 45px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &__nav {
+    display: flex;
+    gap: 99px;
+  }
+
+  &__title {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #2a2521;
+
+    &:hover {
+      color: #ff8f1e;
+    }
+  }
+}
