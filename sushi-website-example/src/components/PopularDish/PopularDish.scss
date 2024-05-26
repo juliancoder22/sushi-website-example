@@ -10,6 +10,11 @@
   min-height: 400px;
   position: relative;
   box-shadow: 0 4px 24px 5px rgba(243, 170, 123, 0.2);
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 
   &__dish-img {
     position: absolute;
