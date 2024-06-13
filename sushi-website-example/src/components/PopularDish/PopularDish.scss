@@ -10,45 +10,98 @@
   min-height: 400px;
   position: relative;
   box-shadow: 0 4px 24px 5px rgba(243, 170, 123, 0.2);
-
-  &__dish-img {
-    position: absolute;
-    top: -10rem;
-  }
-
-  &__title {
-    font-family: "Koh Santepheap", serif;
-    font-weight: 400;
-    font-size: 40px;
-  }
-
-  &__text {
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    margin-top: 16px;
-  }
-
-  &__price {
-    font-family: "Koh Santepheap", serif;
-    color: #ff9800;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 30px;
-  }
-
-  &__buy {
-    background-color: #ff9800;
-    padding: 0.5rem 0.6rem;
-    border-radius: 5rem;
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    cursor: pointer;
-  }
+  transition: 0.3s all ease-in-out;
 }
-.popular-dish:first-child {
+
+.popular-dish:hover {
+  transform: translateY(-10px);
+}
+
+.popular-dish__dish-img {
+  position: absolute;
+  top: -10rem;
+  width: 85%;
+}
+
+.popular-dish__title {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.popular-dish__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+.popular-dish__price {
+  font-family: "Koh Santepheap", serif;
+  color: #ff9800;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.popular-dish__buy {
+  background-color: #ff9800;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.popular-dish:first-child .popular-dish__dish-img {
+  top: -9.5rem;
+}
+
+.popular-dish:last-child .popular-dish__dish-img {
+  top: -8rem;
+  width: 70%;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .popular-dish {
+    width: 100%;
+    min-height: auto;
+    padding: 4rem;
+  }
+
   .popular-dish__dish-img {
-    top: -7.5rem;
+    top: -5rem;
+    max-width: 60%;
+  }
+
+  .popular-dish__title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .popular-dish__text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .popular-dish__price {
+    font-size: 30px;
+  }
+
+  .popular-dish__buy {
+    padding: 0.4rem 0.5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .popular-dish:first-child .popular-dish__dish-img {
+    top: -5rem;
+  }
+
+  .popular-dish:last-child .popular-dish__dish-img {
+    top: -4rem;
+    width: 50%;
   }
 }

@@ -10,19 +10,19 @@ interface Dish {
 
 const dishes: Dish[] = [
   {
-    title: "Onrigi",
+    title: "Onigiri",
     price: "10.99 $",
-    imgSrc: dish1,
+    imgSrc: dish2,
   },
   {
     title: "Spring Roll",
     price: "15.99 $",
-    imgSrc: dish2,
+    imgSrc: dish3,
   },
   {
     title: "Sushi Roll",
     price: "19.99 $",
-    imgSrc: dish3,
+    imgSrc: dish1,
   },
 ];
 
