@@ -10,9 +10,10 @@ const Added = () => {
       <div className="recently-added__content">
         <span className="recently-added__section-name">Recently Added</span>
         <h1 className="recently-added__title">
-          Sushi Samurai <img src={vegetableImg} alt="" /> <br />
+          Sushi Samurai <img src={vegetableImg} alt="vegetable image" /> <br />
           Salmorn Cheese
         </h1>
+        <img src={addedImg} alt="" className="recently-added__img-mobile" />
         <p className="recently-added__text">
           Take a look at what’s new . And do not depreve yourself of a good
           meal, enjoy and be happy.
@@ -21,7 +22,7 @@ const Added = () => {
           Order Now <ArrowForwardIcon className="recently-added__arrow-svg" />
         </button>
       </div>
-      <img src={addedImg} alt="" />
+      <img src={addedImg} alt="" className="recently-added__img-desktop" />
       <img
         src={addedBackgroundImg}
         alt=""
