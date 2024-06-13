@@ -42,3 +42,39 @@
     max-width: 300px;
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__content {
+      width: 100%;
+    }
+
+    &__section-name {
+      font-size: 28px;
+    }
+
+    &__title {
+      width: 100%;
+      font-size: 36px;
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 16px;
+      padding: 1rem;
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__background-img {
+      display: none;
+    }
+  }
+}
